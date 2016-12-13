@@ -13,25 +13,7 @@ import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
   (mouseleave)="isMouseDown = false"
    />
 <button (click)="update.emit({text:message})">Click me !</button>`,
-  styles: [`
-:host {
-  display: flex;
-  flex-direction: column;
-}
-
-.mousedown {
-  border: 2px solid green;
-}
-
-input:focus{
-  font-weight: bold;
-  outline: none;
-}
-
-button {
-  border: none;
-}
-`]
+  styleUrls: ['./simple-form.scss']
 })
 export class SimpleFormComponent implements OnInit {
 

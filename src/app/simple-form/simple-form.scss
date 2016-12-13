@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.mousedown {
+  border: 2px solid green;
+}
+
+button {
+  border: none;
+}
+
+input {
+  margin-top: 10px;
+
+  &:focus {
+    font-weight: bold;
+    outline: none;
+  }
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
